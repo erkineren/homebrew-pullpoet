@@ -9,7 +9,7 @@ class Pullpoet < Formula
   depends_on "go" => :build
 
   def install
-    version_string = "-X 'main.Version=#{version}'"
+    version_string = "-X main.version=#{version}"
     system "go", "build", *std_go_args(ldflags: "-s -w #{version_string}"), "./cmd"
   end
 
