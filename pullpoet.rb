@@ -9,10 +9,11 @@ class Pullpoet < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd"
+    version_string = "-X 'main.Version=#{version}'"
+    system "go", "build", *std_go_args(ldflags: "-s -w #{version_string}"), "./cmd"
   end
 
   test do
     assert_match "pullpoet", shell_output("#{bin}/pullpoet --help")
   end
-end 
+end
