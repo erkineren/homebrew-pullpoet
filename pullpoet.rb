@@ -1,8 +1,8 @@
 class Pullpoet < Formula
   desc "Generate AI-powered pull request descriptions by analyzing git diffs"
   homepage "https://github.com/erkineren/pullpoet"
-  url "https://github.com/erkineren/pullpoet/archive/v1.2.7.tar.gz"
-  sha256 "226f5e76e0d7c14d17eadc0ad496358970439cd1079df32816b81ca270786993"
+  url "https://github.com/erkineren/pullpoet/archive/v1.3.0.tar.gz"
+  sha256 "a02ba932ce719cb66fd663da741fd0634bde46781b8f70d5aaeac14536cbb804"
   license "MIT"
   head "https://github.com/erkineren/pullpoet.git", branch: "main"
 
